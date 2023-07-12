@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ChatRoomGPT</string>
+
+	<!-- UI -->
+		<!-- LOGIN -->
+	<string name="sign_up">Sign up here</string>
 </resources>

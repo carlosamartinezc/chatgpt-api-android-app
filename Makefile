@@ -7,9 +7,6 @@ start: install launch logcat
 restart: launch logcat
 attach: logcat
 
-build: clean
-	./gradlew assemble${BUILD_TYPE}
-
 init:
 	gradle wrapper
 
@@ -18,6 +15,9 @@ clean:
 
 install: 
 	./gradlew install${BUILD_TYPE}
+
+build: clean
+	./gradlew assemble${BUILD_TYPE}
 
 launch: 
 	adb shell am force-stop ${PACKAGE}
